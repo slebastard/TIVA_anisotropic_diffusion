@@ -1,0 +1,7 @@
+function output = norm2_gradient( img, ab, or )
+%GRADIENT Summary of this function goes here
+%   Detailed explanation goes here
+output = sqrt((img(ab-1))^2 + ()^2);
+
+end
+

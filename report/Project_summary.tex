@@ -4,7 +4,7 @@
 \usepackage[english]{babel}
 \usepackage{csquotes} 
 \usepackage[]{mcode}
-\usepackage[left=0.5cm,right=0.5cm,top=1.6cm,bottom=1.6cm]{geometry}
+\usepackage[left=0.3cm,right=0.7cm,top=1.6cm,bottom=1.6cm]{geometry}
 \geometry{bindingoffset=1.5cm}
 \usepackage{graphicx}
 \usepackage[section]{placeins}
@@ -35,7 +35,7 @@ From an image we received, we basically want to produce a wide range of scale sp
 \\
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{ScaleSpace_Example.png}
+	\includegraphics[scale=0.3]{ScaleSpace_Example.png}
 	\caption{Scale space of a 1D signal. Source: Perona \& Malik}
 \end{figure}
 
@@ -126,6 +126,7 @@ To perform an anisotropic filter, the modifications in the image from one step t
 \begin{equation}
 I_{i,j}^{t+1} = I_{i,j}^{t} + \lambda * (c_{N} \nabla_{N}I + c_{S} \nabla_{S}I + c_{W} \nabla_{W}I + c_{E} \nabla_{E}I)
 \end{equation}
+according to the method from Perona \& Malik,
 where $\nabla_{N}I$ will here mean the finite-difference:
 \begin{equation}
 \nabla_{N}I_{i,j} = I_{i-1,j} - I_{i,j}
@@ -162,5 +163,18 @@ Here are the results from my program, computed for different $\kappa$ values at 
 \end{figure}
 
 Once again you can checkout the code as well as the solutions and ressources used at: \url{https://github.com/slebastard/TIVA\_anisotropic\_diffusion}
+
+\section{Bibliography}
+\begin{itemize}
+	\item \url{http://image.diku.dk/imagecanon/material/PeronaMalik1990.pdf}\\
+	Authors: Perona \& Malik\\
+	July 1990
+	\item \url{http://www.cs.utah.edu/~manasi/coursework/cs7960/p2/project2.html}\\¥
+	Author: M. Datar
+	\item \url{http://www.mia.uni-saarland.de/weickert/Papers/book.pdf}\\
+	Author: J. Weickert
+	At: B.G. Teubner Stuttgart
+\end{itemize}
+
 
 \end{document}

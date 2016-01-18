@@ -101,7 +101,9 @@ From this anisotropic diffusion we can generate anisotropic scale space that hav
 
 As can be seen in the results (page 4), the low-resolution image that was generated through anisotropic diffusion make it to preserve the most important edges for a sufficiently low $\kappa$ value. The major gradients in the image are preserved, they even appear enhanced because of the variation of local contrasts around an edge.
 
-\section{Anisotropic filters for denoising and edge detection}
+\section{Applications}
+
+\subsection{Anisotropic filters for denoising and edge detection}
 
 Anisotropic diffusion is an effective process for denoising (through blurring) while preserving the edges (which cannot be done with a mere gaussian kernel convolution). 
 
@@ -111,6 +113,18 @@ Edges detection can be made easy by running the diffusion process backwards. But
 Anisotropic diffusion with just the right diffusion factor, as a function of $|| \nabla I||$ can lead to enhancing the edges in a similar way reversed diffusion would, while going forward in time (thus preventing us from any unstability issue).
 
 In their paper, Perona \& Malik compared the result of anisotropic diffusion with the canny detector in terms of edges enhancement. $|| \nabla I ||$ is compared for the two methods.
+
+\subsection{Thermal conduction in 'anisotropic' environment}
+
+There are several exemples of situations of anisotropic (in the sense that was defined earlier, which in physics is equivalent to the term 'inhomogeneous') diffusion:
+\begin{itemize}
+	\item Diffusion in a porous environement, and more generally in inhomogeneous environement, where the diffusion constant $c(x,y,t$ will depend on the layer, material or physical state that is at position $(x,y)$ at time $t$. In fact we have
+	\begin{equation}
+	c = \frac{k}{\rho C_{V}}
+	\end{equation}
+	where $\rho$ is the material density, $k$ is its thermal conductivity, $C_{V}$ its specific heat.
+	Upon hypothesis a resolution scheme similar to the one explained below, for the right diffusion function, could be used
+\end{itemize}
 
 \begin{figure}[h]
 	\centering
@@ -167,13 +181,19 @@ Once again you can checkout the code as well as the solutions and ressources use
 \section{Bibliography}
 \begin{itemize}
 	\item \url{http://image.diku.dk/imagecanon/material/PeronaMalik1990.pdf}\\
+	Title: Scale-space and edge detection using anisotropic diffusion\\
 	Authors: Perona \& Malik\\
 	July 1990
-	\item \url{http://www.cs.utah.edu/~manasi/coursework/cs7960/p2/project2.html}\\¥
+	\item \url{http://www.cs.utah.edu/~manasi/coursework/cs7960/p2/project2.html}\\
+	Project title: Anisotropic diffusion\\
 	Author: M. Datar
 	\item \url{http://www.mia.uni-saarland.de/weickert/Papers/book.pdf}\\
+	Title: Anisotropic diffusion in image processing\\
 	Author: J. Weickert
 	At: B.G. Teubner Stuttgart
+	\item \url{http://www.sciencedirect.com/science/article/pii/0011227579900547}\\
+	Title: Model calculations on heat flow in inhomogeneous thermal systems\\
+	Authors: A.W Pattulo \& J.C.A van der Sluijs
 \end{itemize}
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.17)  18 JAN 2016 13:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.17)  25 JAN 2016 19:50
 entering extended mode
 **Project_summary.tex
 (D:\Ponts\2A\TIVA\Projet\report\Project_summary.tex
@@ -795,7 +795,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 27.
 
-<ScaleSpace_Example.png, id=39, 300.12125pt x 151.06438pt>
+<ScaleSpace_Example.png, id=51, 300.12125pt x 151.06438pt>
 File: ScaleSpace_Example.png Graphic file (type png)
 
 <use ScaleSpace_Example.png>
@@ -808,7 +808,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 46.
 
-<isotropic_diffusion.jpg, id=40, 811.53188pt x 210.7875pt>
+<isotropic_diffusion.jpg, id=52, 811.53188pt x 210.7875pt>
 File: isotropic_diffusion.jpg Graphic file (type jpg)
 
 <use isotropic_diffusion.jpg>
@@ -818,63 +818,59 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 70.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [1
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/Ponts/2A/TIVA/Projet/r
 eport/ScaleSpace_Example.png>] [2 <D:/Ponts/2A/TIVA/Projet/report/isotropic_dif
-fusion.jpg>]
-<EdgeEnhancement_Example.png, id=78, 282.05376pt x 355.3275pt>
+fusion.jpg>] <EdgeEnhancement_Example.png, id=90, 282.05376pt x 355.3275pt>
 File: EdgeEnhancement_Example.png Graphic file (type png)
 
 <use EdgeEnhancement_Example.png>
-Package pdftex.def Info: EdgeEnhancement_Example.png used on input line 131.
+Package pdftex.def Info: EdgeEnhancement_Example.png used on input line 136.
 (pdftex.def)             Requested size: 141.02652pt x 177.6633pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 154.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 159.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 162.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 167.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1pcr.fd"
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
-<anisotropic_diffusion.jpg, id=86, 1171.37625pt x 706.64pt>
+<anisotropic_diffusion.jpg, id=96, 1171.37625pt x 706.64pt>
 File: anisotropic_diffusion.jpg Graphic file (type jpg)
 
 <use anisotropic_diffusion.jpg>
-Package pdftex.def Info: anisotropic_diffusion.jpg used on input line 175.
+Package pdftex.def Info: anisotropic_diffusion.jpg used on input line 180.
 (pdftex.def)             Requested size: 491.97467pt x 296.78677pt.
  [4 <D:/Ponts/2A/TIVA/Projet/report/EdgeEnhancement_Example.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
  [5 <D:/Ponts/2A/TIVA/Projet/report/anisotropic_diffusion.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (D:\Ponts\2A\TIVA\Projet\report\Project_summary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
-
-
-Package rerunfilecheck Warning: File `Project_summary.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Project_summary.out':
-(rerunfilecheck)             Before: 66DE2B23BB94009EB70FD4E0466CDBAA;600
-(rerunfilecheck)             After:  234DC7A7BE000B38FF75CCCFC4F01A9E;761.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
+Package rerunfilecheck Info: File `Project_summary.out' has not changed.
+(rerunfilecheck)             Checksum: 1E9BEB8D406AED170AA682A89243EC9C;828.
  ) 
 Here is how much of TeX's memory you used:
- 9854 strings out of 493921
- 138669 string characters out of 3144876
+ 9858 strings out of 493921
+ 138731 string characters out of 3144876
  243004 words of memory out of 3000000
- 12972 multiletter control sequences out of 15000+200000
+ 12975 multiletter control sequences out of 15000+200000
  15935 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 33i,11n,43p,824b,1323s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,12n,43p,824b,1323s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
 \Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk>
  <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
@@ -898,9 +894,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files 
 (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Project_summary.pdf (5 pages, 1121787 bytes).
+Output written on Project_summary.pdf (5 pages, 1122262 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

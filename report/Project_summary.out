@@ -5,7 +5,8 @@
 \BOOKMARK [1][-]{section.3}{Applications}{}% 5
 \BOOKMARK [2][-]{subsection.3.1}{Anisotropic filters for denoising and edge detection}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.2}{Thermal conduction in 'anisotropic' environment}{section.3}% 7
-\BOOKMARK [1][-]{section.4}{Anisotropic filters: how to}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{Computing the filter}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.2}{Results}{section.4}% 10
-\BOOKMARK [1][-]{section.5}{Bibliography}{}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Bilateral filter}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Anisotropic filters: how to}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Computing the filter}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Results}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Bibliography}{}% 12

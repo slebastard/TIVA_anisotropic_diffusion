@@ -48,7 +48,7 @@ I_{t} = div(c(x,y,t) \nabla I)
 \end{equation}
 
 In isotropic situation $c(x,y,t)$ is only a function of time, and in the case of a time-constant environment \textbf{$c$ is a constant}.
-The solution to this equation in the caseis the following:
+The solution of this equation in this case is the following:
 \begin{equation}
 I(x,y,t)=\frac{1}{\sqrt{4 \pi c t}}\int_{ }^{ } I(x',y',0)\exp^{-\frac{(x-x')^{2} + (y-y')^{2}}{4ct}}dx'dy'
 \end{equation}
@@ -57,7 +57,7 @@ The solution can be interpreted as the convolution of the original image with th
 G(x,y,t)=\frac{1}{\sqrt{4 \pi c t}}\exp^{-\frac{x^{2} + y^{2}}{4ct}}
 \end{equation}
 the deviation of which increases linearly with time, and is a linear function of $c$.
-This result suits the intuition that the gaussian kernel expands wih time, leading to high frequences disappearing in the image.
+This result suits the intuition that the gaussian kernel expands wih time, leading to fading high frequences.
 
 
 To illustrate the different kinds of solutions I'll use the following picture of Venise. First here the result of isotropic diffusion for different kernel width.
@@ -82,7 +82,7 @@ Note that the Laplacian of Gaussian (LoG) is often used for the isotropic diffus
 In the general case the diffusion factor $c(x,y,t)$ is a function of space and time.
 An ideal case would be if we could make it to set $c=0$ on the edges of the objects and $c \neq 0$ otherwise. There would then be a blurring inside each regions, without the regions being mixed up.
 
-For some cases of diffusion factors, taken as functions of $|| \nabla I ||$, the edges of the image will be preserved, even enhanced.
+For some cases of diffusion factors, taken as functions of $|| \nabla I ||$, the edges of the image will be preserved, they will even seem enhanced (though they technically will not be).
 
 Perona \& Malik worked on a specific range of solutions, generated from two classes of diffusion factors:
 \begin{equation}
@@ -90,12 +90,12 @@ Perona \& Malik worked on a specific range of solutions, generated from two clas
 \end{equation}
 and
 \begin{equation}
-c_{;kappa}(||\nabla I||) = \frac{1}{1+(\frac{|| \nabla I ||}{\kappa})^{2}}
+c_{\kappa}(||\nabla I||) = \frac{1}{1+(\frac{|| \nabla I ||}{\kappa})^{2}}
 \end{equation}
 
-In both cases we can see that the spots with a high gradient will generate a low diffusion factor, which means that diffusion will not occur much around the edges. Those two diffusion functions are the result of compromises between blurring the spots will little intensity variations while preserving the edges.
+In both cases we can see that the spots with a high gradient will generate a low diffusion factor, which means that diffusion will not occur much around the edges. Those two diffusion functions result from a compromise between blurring the low (intensity) variations spots while preserving the edges.
 
-Note that the $\kappa$ parameter plays an important role: when high, only very important gradients will induce a low diffusion factor. That means that the asymptotic situation $\kappa \to \infty$ is equivalent to isotropic diffusion, while a very low value for $\kappa$ will mean that only spots with a very high gradient (that is edges) will be spared from diffusion.
+Note that the $\kappa$ parameter plays an important role: when high, only very important gradients will induce a low diffusion factor. That means that the asymptotic situation $\kappa \to \infty$ is equivalent to isotropic diffusion, while a very low value for $\kappa$ will mean that spots with a fairly high gradient (edges, that is) will be spared from diffusion.
 
 From this anisotropic diffusion we can generate anisotropic scale space that have good properties.
 
@@ -110,7 +110,7 @@ Anisotropic diffusion is an effective process for denoising (through blurring) w
 Is was shown before that building a space scale with an isotropic diffusion would lead to blurring the edges, which is a problem as what we seek to do is to represent all the objects of different scales in the image without alterring them, which implies that we must be able to detect edges of all objects in the image from the scale space.
 Edges detection can be made easy by running the diffusion process backwards. But the problem is ill-posed and mostly leads to unstable solution.
 
-Anisotropic diffusion with just the right diffusion factor, as a function of $|| \nabla I||$ can lead to enhancing the edges in a similar way reversed diffusion would, while going forward in time (thus preventing us from any unstability issue).
+Anisotropic diffusion with just the right diffusion factor, as a function of $|| \nabla I||$ can lead to similar results while going forward in time (thus preventing us from any unstability issue).
 
 In their paper, Perona \& Malik compared the result of anisotropic diffusion with the canny detector in terms of edges enhancement. $|| \nabla I ||$ is compared for the two methods.
 
@@ -123,8 +123,13 @@ There are several exemples of situations of anisotropic (in the sense that was d
 	c = \frac{k}{\rho C_{V}}
 	\end{equation}
 	where $\rho$ is the material density, $k$ is its thermal conductivity, $C_{V}$ its specific heat.
-	Upon hypothesis a resolution scheme similar to the one explained below, for the right diffusion function, could be used
+	Upon hypothesis a resolution scheme similar to the one explained below, for the right diffusion function, could be used.
 \end{itemize}
+
+\subsection{Bilateral filter}
+
+Instictively, anisotropic diffusion is closed to bilateral filtering, because a pixel in the picture is replaced by the average of neighboors only if the neightboors have similar intensity levels. That's why edges are preserved here: the white-grey of the sky won't be taken into consideration in the black of the root next to the edges, because the diffusion factor on the edge of the roof is low enough.
+But maybe we can show a direct link between the two.
 
 \begin{figure}[h]
 	\centering
@@ -177,6 +182,8 @@ Here are the results from my program, computed for different $\kappa$ values at 
 \end{figure}
 
 Once again you can checkout the code as well as the solutions and ressources used at: \url{https://github.com/slebastard/TIVA\_anisotropic\_diffusion}
+
+As most differential problems, this can also be resolved by minimizing an image functionnal. This is not the approach that has been dealt with here.
 
 \section{Bibliography}
 \begin{itemize}

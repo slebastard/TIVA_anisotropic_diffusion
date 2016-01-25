@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.17)  25 JAN 2016 19:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.17)  25 JAN 2016 23:52
 entering extended mode
 **Project_summary.tex
 (D:\Ponts\2A\TIVA\Projet\report\Project_summary.tex
@@ -826,51 +826,48 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/Ponts/2A/TIVA/Projet/r
 eport/ScaleSpace_Example.png>] [2 <D:/Ponts/2A/TIVA/Projet/report/isotropic_dif
-fusion.jpg>] <EdgeEnhancement_Example.png, id=90, 282.05376pt x 355.3275pt>
+fusion.jpg>] [3]
+<EdgeEnhancement_Example.png, id=96, 282.05376pt x 355.3275pt>
 File: EdgeEnhancement_Example.png Graphic file (type png)
 
 <use EdgeEnhancement_Example.png>
-Package pdftex.def Info: EdgeEnhancement_Example.png used on input line 136.
+Package pdftex.def Info: EdgeEnhancement_Example.png used on input line 144.
 (pdftex.def)             Requested size: 141.02652pt x 177.6633pt.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 167.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 159.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 167.
+) [4 <D:/Ponts/2A/TIVA/Projet/report/EdgeEnhancement_Example.png>]
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 175.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1pcr.fd"
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
-<anisotropic_diffusion.jpg, id=96, 1171.37625pt x 706.64pt>
+<anisotropic_diffusion.jpg, id=106, 1171.37625pt x 706.64pt>
 File: anisotropic_diffusion.jpg Graphic file (type jpg)
 
 <use anisotropic_diffusion.jpg>
-Package pdftex.def Info: anisotropic_diffusion.jpg used on input line 180.
+Package pdftex.def Info: anisotropic_diffusion.jpg used on input line 188.
 (pdftex.def)             Requested size: 491.97467pt x 296.78677pt.
- [4 <D:/Ponts/2A/TIVA/Projet/report/EdgeEnhancement_Example.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
  [5 <D:/Ponts/2A/TIVA/Projet/report/anisotropic_diffusion.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
  (D:\Ponts\2A\TIVA\Projet\report\Project_summary.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
 Package rerunfilecheck Info: File `Project_summary.out' has not changed.
 (rerunfilecheck)             Checksum: 1E9BEB8D406AED170AA682A89243EC9C;828.
  ) 
 Here is how much of TeX's memory you used:
- 9858 strings out of 493921
- 138731 string characters out of 3144876
- 243004 words of memory out of 3000000
- 12975 multiletter control sequences out of 15000+200000
- 15935 words of font info for 41 fonts, out of 3000000 for 9000
+ 9863 strings out of 493921
+ 138784 string characters out of 3144876
+ 240900 words of memory out of 3000000
+ 12976 multiletter control sequences out of 15000+200000
+ 16698 words of font info for 42 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 33i,12n,43p,824b,1323s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,12n,43p,824b,1906s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users
 \Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk>
  <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
@@ -894,9 +891,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files 
 (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Project_summary.pdf (5 pages, 1122262 bytes).
+Output written on Project_summary.pdf (6 pages, 1126536 bytes).
 PDF statistics:
- 467 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

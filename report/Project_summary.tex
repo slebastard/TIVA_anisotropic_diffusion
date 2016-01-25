@@ -117,19 +117,27 @@ In their paper, Perona \& Malik compared the result of anisotropic diffusion wit
 \subsection{Thermal conduction in 'anisotropic' environment}
 
 There are several exemples of situations of anisotropic (in the sense that was defined earlier, which in physics is equivalent to the term 'inhomogeneous') diffusion:
-\begin{itemize}
-	\item Diffusion in a porous environement, and more generally in inhomogeneous environement, where the diffusion constant $c(x,y,t$ will depend on the layer, material or physical state that is at position $(x,y)$ at time $t$. In fact we have
+Diffusion in a porous environement, and more generally in inhomogeneous environement, where the diffusion constant $c(x,y,t)$ will depend on the layer, material or physical state that is at position $(x,y)$ at time $t$. In fact we have
 	\begin{equation}
 	c = \frac{k}{\rho C_{V}}
 	\end{equation}
 	where $\rho$ is the material density, $k$ is its thermal conductivity, $C_{V}$ its specific heat.
 	Upon hypothesis a resolution scheme similar to the one explained below, for the right diffusion function, could be used.
-\end{itemize}
 
 \subsection{Bilateral filter}
 
 Instictively, anisotropic diffusion is closed to bilateral filtering, because a pixel in the picture is replaced by the average of neighboors only if the neightboors have similar intensity levels. That's why edges are preserved here: the white-grey of the sky won't be taken into consideration in the black of the root next to the edges, because the diffusion factor on the edge of the roof is low enough.
-But maybe we can show a direct link between the two.
+\\
+Indeed the discrete anisotropic propagation formula described in the how-to below is exactly equivalent to:
+\begin{equation}
+\frac{\partial I_{r}}{\partial t} = A \sum_{s \in N(r)}c(I_{s} - I_{r})(I_{s} - I_{r})
+\end{equation}
+which is precisely a gradient descent algorithm step, with A an exploration speed factor and for the following local energy function:
+\begin{equation}
+E(I_{r}) = \sum_{s \in N(r)}c(I_{s} - I_{r})(I_{s} - I_{r}) = \sum_{s \in N(r)}V(I_{s}, I_{r})
+\end{equation}
+
+where $V(I_{s}, I_{r}) = V(I_{s} - I_{r})$ is an increasing function of the distance between $I_{s}$ and $I_{r}$. In this way the solution from the anisotropic discrete scheme computes a mean value from direct neighboors the value of which is similar. This process is done by minimizing an energy functionnal, whereas bilateral filters use gaussian convolutions, but the two schemes are very much alike. One difference is that gaussian convolution directly computes a mean value over a wide range of geometrical neighboors, while anisotropic diffusion computes a mean value implicitely, and the process is only tangible for a big number of time loops. 
 
 \begin{figure}[h]
 	\centering
